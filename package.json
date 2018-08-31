@@ -4,14 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --silent",
+    "test:watch": "jest --silent --watch",
+    "test:cov": "jest --silent --coverage",
+    "format": "prettier --write \"src/**/*.{js, jsx, css, json}\" ",
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
+    "dev": "parcel src/index.html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@reach/router": "^1.1.1",
     "emotion": "^9.2.8",
-    "petfinder-client": "0.0.3",
+    "header": "^0.1.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-emotion": "^9.2.8"
