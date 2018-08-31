@@ -1,29 +1,22 @@
 body {
-  background-color: #077187;
+  background-image: url("images/matthieu-comoy-225710-unsplash.jpg");
+  background-size: cover;
+  font-family: "Cinzel", serif;
+  font-family: "Open Sans", sans-serif;
 }
-.welcomeHeader {
-  color: white;
-  text-align: center;
-  background-color: #122c34;
-  border-radius: 75px;
-  padding: 20px;
-  width: 60%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .navBar {
   height: 30px;
 }
 .GitHub {
   float: right;
   color: white;
-  font-size: 16px;
+  font-size: 30px;
   text-decoration: none;
 }
 .brand {
   margin-top: auto;
   color: white;
-  font-size: 16px;
+  font-size: 32px;
   text-decoration: none;
 }

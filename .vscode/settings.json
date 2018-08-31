@@ -1,3 +1,10 @@
 {
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "files.exclude": {
+    "node_modules/": "explorerExcludedFiles",
+    ".vscode/": "explorerExcludedFiles",
+    "dist/": "explorerExcludedFiles",
+    ".cache/": "explorerExcludedFiles",
+    ".env": "explorerExcludedFiles"
+  }
 }
