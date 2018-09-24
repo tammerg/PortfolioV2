@@ -9,18 +9,12 @@
     "test:cov": "jest --silent --coverage",
     "format": "prettier --write \"src/**/*.{js, jsx, css, json}\" ",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.html",
+    "build": "parcel build --public-url ./dist/ src/index.html",
+    "start": "npm run build && babel-node server.js"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@reach/router": "^1.1.1",
-    "emotion": "^9.2.8",
-    "header": "^0.1.1",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-emotion": "^9.2.8"
-  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
@@ -37,5 +31,15 @@
     "parcel-bundler": "^1.9.7",
     "prettier": "^1.14.2",
     "react-test-renderer": "^16.4.2"
+  },
+  "dependencies": {
+    "@reach/router": "^1.1.1",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-emotion": "^9.2.8",
+    "emotion": "^9.2.8",
+    "express": "^4.16.3",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-emotion": "^9.2.8"
   }
 }
